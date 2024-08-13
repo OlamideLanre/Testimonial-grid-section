@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    /* ### Primary  */
+    --Moderateviolet: hsl(263, 55%, 52%);
+    --Verydarkgrayishblue: hsl(217, 19%, 35%);
+    --Verydarkblackishblue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    /* ### Neutral */
+    --Lightgray: hsl(0, 0%, 81%);
+    --Lightgrayishblue: hsl(210, 46%, 95%)
+}
+body{
+    background-color: var(--Lightgrayishblue);
+}
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+}
+.daniel .card{
+    overflow: hidden;
+}
+.card{
+    border-radius: 10px;
+    margin-top: 2em;
+    padding-bottom: 2em;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto;
+    padding: 1.4em 1.4em 0 1.4em;
+}
+.daniel .profile{
+    padding: 0 1.4em 1.4em 1.4em;
+}
+.profile .image{
+    border-radius: 100px;
+    width: 40px;
+}
+.profile h4 {
+    color: var(--White);
+    font-weight: 500;
+}
+.profile p {
+    color: var(--Lightgray);
+}
+/* .daniel .testimonial-content{
+    background-image: url('images/bg-pattern-quotation.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: relative;
+    background-size: 20%;
+   
+} */
+.testimonial-content{
+    padding: 1em;
+    position: relative;
+    margin: 0 auto;
+}
+.daniel h3{
+    width: 75%;
+    color: var(--White);
+    font-size: 1.3em;
+    font-weight: 600;
+    /* margin-bottom: 10px; */
+    position: absolute;
+    top: -19%;
+    /* margin-top: 10px; */
+    /* margin: 8px 0 0 8px; */
+}
+.testimonial-content .danielP{
+    color: var(--Lightgray);
+    width: 95%;
+    margin-top: 5em;
+}
+
+.testimonial-content p{
+    color: var(--Lightgray);
+    margin-top: 13px;
+}
+.testimonial-content h3{
+    color:  var(--White);
+    font-size: 1.3em;
+}
+/* #quote{
+    
+    background-image: url('images/bg-pattern-quotation.svg');
+    
+    background-size: contain;
+    
+    background-repeat: no-repeat;
+    
+    background-position: top right;
+    position: relative; 
+     padding-left: 2em;
+} */
+.daniel{
+    background-color: var(--Moderateviolet);
+}
+.Jonathan{
+    background-color: var(--Verydarkgrayishblue);
+}
+.Jeanette{
+    background-color: var(--White);
+}
+.Jeanette h3,
+.Jeanette h4{
+    color: var(--Verydarkgrayishblue);
+}
+.Jeanette .testimonial-content p{
+    color: var(--Verydarkgrayishblue);
+}
+.Patrick{
+    background-color: var(--Verydarkblackishblue);
+}
+.Kira{
+    background-color: var(--White);
+}
+.Kira h4, 
+.Kira h3,
+.Kira .testimonial-content p{
+    color: var(--Verydarkgrayishblue);
+}
+.attribution{
+    margin-top: 20px;
+}
+
+
+@media (min-width:1024px) and (max-width:1440px) {
+    .testimonial{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .daniel{
+        grid-column: span 2;
+    }
+    .daniel h3{
+        width: 80%;
+        top: -50px;
+    }
+    .testimonial-content .danielP{
+        width: 90%;
+        margin-top: 38px;
+    }
+    .Patrick{
+        grid-column: 2 / span 2;
+    }
+    .Jeanette{
+        grid-row: 2 ;
+    }
+    .Kira{
+        grid-row: 1 / span 2;
+        grid-column: 4;
+    }
+    .testimonial-content p{
+        font-size: 1.2em;
+    }
+ /* .daniel #quoteDiv2{
+        background-image: url('images/bg-pattern-quotation.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top right;
+        position: relative;
+        background-size: 15%;
+        top: -20%;
+ } */
+/* #quoteDivMob{
+    display: none;
+    padding-left: 150%;
+    overflow: hidden;
+} */
+}
+
+@media (min-width: 768px) and (max-width: 912px) {
+    .testimonial-content .danielP {
+        margin-top: 2.2em;
+        
+    }
+    .daniel h3{
+        top: -20%;
+    }
+    .testimonial-content p{
+        font-size: 1.3em;
+    }
+    
+}
