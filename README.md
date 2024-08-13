@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![my solution](image.png)
+[my solution](image.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/OlamideLanre/Testimonials-grid-section)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL here](https://github.com/OlamideLanre/Testimonials-grid-section)
+- Live Site URL: [live site URL here](https://olamidelanre.github.io/Testimonial-grid-section)
 
 ## My process
 
