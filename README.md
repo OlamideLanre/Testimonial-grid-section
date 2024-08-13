@@ -30,8 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here](https://github.com/OlamideLanre/Testimonials-grid-section)
-- Live Site URL: [live site URL here](https://olamidelanre.github.io/Testimonial-grid-section)
+- Live Site URL: [view live site here](testimonial-grid-section-kappa-two.vercel.app)
 
 ## My process
 
