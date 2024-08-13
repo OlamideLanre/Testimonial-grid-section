@@ -18,17 +18,21 @@ body{
     
 }
 .container{
-    width: 100%;
-    max-width: 1200px;
+    width: 85%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
 }
 .testimonial{
     display: flex;
     flex-direction: column;
-    width: 90%;
     margin: 0 auto;
 }
 .daniel .card{
     overflow: hidden;
+}
+.daniel img,
+.Patrick img{
+    border: solid 2px rgb(204, 77, 204);
 }
 .card{
     border-radius: 10px;
@@ -43,9 +47,6 @@ body{
     margin: 0 auto;
     padding: 1.4em 1.4em 0 1.4em;
 }
-.daniel .profile{
-    padding: 0 1.4em 1.4em 1.4em;
-}
 .profile .image{
     border-radius: 100px;
     width: 40px;
@@ -57,35 +58,28 @@ body{
 .profile p {
     color: var(--Lightgray);
 }
-/* .daniel .testimonial-content{
+.daniel {
     background-image: url('images/bg-pattern-quotation.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top right 10%;
     position: relative;
-    background-size: 20%;
+    background-size: 100px;
    
-} */
+}
 .testimonial-content{
     padding: 1em;
     position: relative;
     margin: 0 auto;
 }
 .daniel h3{
-    width: 75%;
+    /* width: 75%; */
     color: var(--White);
-    font-size: 1.3em;
-    font-weight: 600;
-    /* margin-bottom: 10px; */
-    position: absolute;
-    top: -18%;
-    /* margin-top: 10px; */
-    /* margin: 8px 0 0 8px; */
+    font-weight: 500;
 }
 .testimonial-content .danielP{
     color: var(--Lightgray);
     width: 95%;
-    margin-top: 5em;
 }
 
 .testimonial-content p{
@@ -95,19 +89,8 @@ body{
 .testimonial-content h3{
     color:  var(--White);
     font-size: 1.3em;
+    font-weight: 500;
 }
-/* #quote{
-    
-    background-image: url('images/bg-pattern-quotation.svg');
-    
-    background-size: contain;
-    
-    background-repeat: no-repeat;
-    
-    background-position: top right;
-    position: relative; 
-     padding-left: 2em;
-} */
 .daniel{
     background-color: var(--Moderateviolet);
 }
@@ -148,14 +131,18 @@ body{
     }
     .daniel{
         grid-column: span 2;
+        background-image: url('images/bg-pattern-quotation.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top right 10%;
+        position: relative;
+        background-size: 20%;
     }
     .daniel h3{
-        width: 80%;
         top: -50px;
     }
     .testimonial-content .danielP{
         width: 90%;
-        margin-top: 38px;
     }
     .Patrick{
         grid-column: 2 / span 2;
@@ -167,24 +154,10 @@ body{
         grid-row: 1 / span 2;
         grid-column: 4;
     }
-    .container{
+    /* .container{
         margin: 0 auto;
-    }
+    } */
 
- /* .daniel #quoteDiv2{
-        background-image: url('images/bg-pattern-quotation.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: top right;
-        position: relative;
-        background-size: 15%;
-        top: -20%;
- } */
-/* #quoteDivMob{
-    display: none;
-    padding-left: 150%;
-    overflow: hidden;
-} */
 }
 
 @media (min-width: 768px) and (max-width: 912px) {
@@ -198,8 +171,8 @@ body{
     .testimonial-content p{
         font-size: 1.3em;
     }
-    .container{
+    /* .container{
         margin: 0 auto;
-    }
+    } */
     
 }
